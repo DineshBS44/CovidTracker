@@ -28,6 +28,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:id="@+id/bottomNavigationView"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@drawable/icon_background"
         app:labelVisibilityMode="selected"
         app:itemHorizontalTranslationEnabled="false"
         app:menu="@menu/bottom_menu"/>
