@@ -4,22 +4,24 @@
         android:id="@+id/nav_home"
         android:title="Home"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_home_24"
+        android:icon="@drawable/ic_home"
         />
     <item
         android:id="@+id/nav_country"
         android:title="Country"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_place_24"
+        android:icon="@drawable/ic_country"
         />
     <item
         android:id="@+id/nav_precautions"
         android:title="Measures"
         android:enabled="true"
+        android:icon="@drawable/ic_precautions"
         />
     <item
         android:id="@+id/nav_about"
         android:title="About"
         android:enabled="true"
+        android:icon="@drawable/ic_about"
         />
 </menu>
