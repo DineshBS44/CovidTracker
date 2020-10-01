@@ -17,5 +17,17 @@
         tools:layout="@layout/fragment_country"
         android:label="fragment_country"
         />
+    <fragment
+        android:name="com.example.covidtracker.PrecautionsFragment"
+        android:id="@+id/nav_precautions"
+        tools:layout="@layout/fragment_precautions"
+        android:label="fragment_country"
+        />
+    <fragment
+        android:name="com.example.covidtracker.AboutFragment"
+        android:id="@+id/nav_about"
+        tools:layout="@layout/fragment_about"
+        android:label="fragment_country"
+        />
 
 </navigation>
