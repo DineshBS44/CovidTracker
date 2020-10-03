@@ -35,6 +35,8 @@ public class HomeFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
+        getActivity().setTitle("Overview");
+
         // call view
         tvTotalConfirmed = root.findViewById(R.id.total_confirmed);
         tvTotalDeaths = root.findViewById(R.id.total_deaths);

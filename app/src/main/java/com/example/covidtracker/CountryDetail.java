@@ -17,6 +17,7 @@ public class CountryDetail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_country_detail);
 
+        getSupportActionBar().setTitle("COVID 19");
         // call view
         tvDetailCountryName = findViewById(R.id.detail_country_name);
         tvDetailTotalCases = findViewById(R.id.detail_total_cases);
