@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -193,7 +194,8 @@ public class CountryFragment extends Fragment {
         inflater.inflate(R.menu.country_menu, menu);
         MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchView searchView = new SearchView(getActivity());
-        searchView.setQueryHint("Search...");
+        //searchView.setQueryHint("Search...");
+        searchView.setQueryHint(Html.fromHtml("<font color = #ffffff>Search...</font>"));
         searchView.setMaxWidth(Integer.MAX_VALUE);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
