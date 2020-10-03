@@ -251,8 +251,8 @@
                     android:textSize="15sp"
                     android:fontFamily="@font/cerebri_sans_regular"
                     android:textColor="@android:color/white"
-                    android:text="Total Cases"
-                    android:id="@+id/detail_tv_today_critical"
+                    android:text="Total Critical"
+                    android:id="@+id/detail_tv_total_critical"
                     />
 
                 <TextView
@@ -262,7 +262,7 @@
                     android:text="2"
                     android:textColor="@color/colorAccent"
                     android:textSize="30sp"
-                    android:id="@+id/detail_today_critical"
+                    android:id="@+id/detail_total_critical"
                     />
 
             </LinearLayout>
