@@ -28,7 +28,7 @@ public class CountryDetail extends AppCompatActivity {
         tvDetailTotalCritical = findViewById(R.id.detail_total_critical);
 
 
-        // call Covid Country
+        // call Country model class
         Country covidCountry = getIntent().getParcelableExtra("EXTRA_COVID");
 
         // set text view
