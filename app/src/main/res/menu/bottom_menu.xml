@@ -10,7 +10,7 @@
         android:id="@+id/nav_country"
         android:title="Country"
         android:enabled="true"
-        android:icon="@drawable/ic_country"
+        android:icon="@drawable/ic_location_icon"
         />
     <item
         android:id="@+id/nav_precautions"
