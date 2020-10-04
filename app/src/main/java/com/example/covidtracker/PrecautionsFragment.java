@@ -46,8 +46,13 @@ public class PrecautionsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        for(int i=0;i<10;i++)
-        precautions.add(new Precautions("Wash Hands","It is always a good precaution to Wash hands regularly at home",R.drawable.ic_wash_your_hands));
+        precautions.add(new Precautions("Wash Hands","It is always a good precaution to wash hands regularly at home",R.drawable.ic_wash_your_hands));
+        precautions.add(new Precautions("Cough or Sneeze","While coughing or sneezing, cover nose and mouth by any means",R.drawable.ic_cough));
+        precautions.add(new Precautions("Stay Home","Staying at home is the best possible way to avoid contact with COVID and one must try their best",R.drawable.ic_stay_at_home));
+        precautions.add(new Precautions("Wear Mask","Always wear a mask before going outside as it might provide a well enough cover against the virus",R.drawable.ic_mask));
+        precautions.add(new Precautions("Sanitize","While outside, it is best to sanitize often before or after touching any object ",R.drawable.ic_sanitize));
+        precautions.add(new Precautions("Avoid Touching Face ","One must avoid touching their eyes, nose or mouth before washing their hands",R.drawable.ic_dont_touch_face));
+        precautions.add(new Precautions("Social Distancing","While outside, it is best to maintain a 2m distance from anyone",R.drawable.ic_social_distance));
 
         precautionsRecyclerView=view.findViewById(R.id.precautions_rv);
         LinearLayoutManager precautionsLinearLayoutManager = new LinearLayoutManager(getContext());
