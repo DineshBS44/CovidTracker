@@ -1,59 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/colorPrimaryDark"
-    android:fitsSystemWindows="true"
-    android:layout_height="wrap_content">
+    android:fitsSystemWindows="true">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
         android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
         app:cardCornerRadius="7dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        >
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="15dp"
-            android:orientation="horizontal"
             android:background="@color/colorPrimary"
-            >
+            android:orientation="horizontal"
+            android:padding="15dp">
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Wash Hands"
-                    android:maxLines="3"
-                    android:fontFamily="@font/cerebri_sans_regular"
-                    android:textColor="@color/colorAccent"
-                    android:textSize="20sp"
                     android:id="@+id/precautions_header"
-                    />
-
-                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:maxLines="10"
+                    android:fontFamily="@font/cerebri_sans_regular"
+                    android:maxLines="3"
+                    android:text="Wash Hands"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/precautions_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/cerebri_sans_regular"
-                    android:textColor="@android:color/white"
-                    android:textSize="15sp"
+                    android:maxLines="10"
                     android:text="It is always a good precaution to Wash hands regularly at home"
-                    android:id="@+id/precautions_body"
-                    />
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -61,19 +56,18 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/precautions_image"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:id="@+id/precautions_image"
                     android:layout_gravity="center"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/ic_wash_your_hands"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    android:src="@drawable/ic_wash_your_hands" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

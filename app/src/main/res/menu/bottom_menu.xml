@@ -2,26 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_home"
-        android:title="Home"
         android:enabled="true"
         android:icon="@drawable/ic_home_icon_2"
-        />
+        android:title="Home" />
     <item
         android:id="@+id/nav_country"
-        android:title="Country"
         android:enabled="true"
         android:icon="@drawable/ic_location_icon"
-        />
+        android:title="Country" />
     <item
         android:id="@+id/nav_precautions"
-        android:title="Precaution"
         android:enabled="true"
         android:icon="@drawable/ic_precautions"
-        />
+        android:title="Precaution" />
     <item
         android:id="@+id/nav_about"
-        android:title="About"
         android:enabled="true"
         android:icon="@drawable/ic_about"
-        />
+        android:title="About" />
 </menu>
