@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.view.ViewCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -45,6 +46,7 @@ public class PrecautionsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        for(int i=0;i<10;i++)
         precautions.add(new Precautions("Wash Hands","It is always a good precaution to Wash hands regularly at home",R.drawable.ic_wash_your_hands));
 
         precautionsRecyclerView=view.findViewById(R.id.precautions_rv);
@@ -52,6 +54,7 @@ public class PrecautionsFragment extends Fragment {
         precautionsLinearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         precautionsRecyclerView.setLayoutManager(precautionsLinearLayoutManager);
         precautionsRecyclerView.setAdapter(new PrecautionsAdapter(precautions));
+        ViewCompat.setNestedScrollingEnabled(precautionsRecyclerView, false);
 
     }
 }
