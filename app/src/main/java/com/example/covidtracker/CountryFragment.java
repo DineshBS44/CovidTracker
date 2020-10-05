@@ -17,6 +17,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -77,6 +79,13 @@ public class CountryFragment extends Fragment {
                 showSelectedCovidCountry(covidCountries.get(position));
             }
         });
+
+        LayoutAnimationController controller =
+                AnimationUtils.loadLayoutAnimation(rvCovidCountry.getContext(), R.anim.layout_animation_fall_down);
+
+        rvCovidCountry.setLayoutAnimation(controller);
+        rvCovidCountry.getAdapter().notifyDataSetChanged();
+        rvCovidCountry.scheduleLayoutAnimation();
     }
 
     private void showSelectedCovidCountry(Country covidCountry) {
