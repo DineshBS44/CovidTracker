@@ -57,7 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/cerebri_sans_bold"
-                    android:text="80282"
+                    android:text="85470"
                     android:textColor="@color/colorAccent"
                     android:textSize="30dp" />
 
@@ -76,7 +76,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/cerebri_sans_regular"
-                    android:text="Total Cases"
+                    android:text="Today Cases"
                     android:textColor="@android:color/white"
                     android:textSize="15sp" />
 
@@ -85,7 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/cerebri_sans_bold"
-                    android:text="80282"
+                    android:text="20"
                     android:textColor="@color/colorAccent"
                     android:textSize="30sp" />
 
