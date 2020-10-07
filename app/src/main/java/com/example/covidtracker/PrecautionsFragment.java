@@ -82,9 +82,9 @@ public class PrecautionsFragment extends Fragment {
                 .show();
 
         Runnable mRunnable;
-        Handler mHandler=new Handler();
+        Handler mHandler = new Handler();
 
-        mRunnable=new Runnable() {
+        mRunnable = new Runnable() {
 
             @Override
             public void run() {
@@ -96,7 +96,7 @@ public class PrecautionsFragment extends Fragment {
             }
         };
 
-        mHandler.postDelayed(mRunnable,1300);
+        mHandler.postDelayed(mRunnable, 1300);
 
     }
 }
