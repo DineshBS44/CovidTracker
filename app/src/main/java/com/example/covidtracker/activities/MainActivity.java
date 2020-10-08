@@ -1,4 +1,4 @@
-package com.example.covidtracker;
+package com.example.covidtracker.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentContainerView;
@@ -8,6 +8,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
 
+import com.example.covidtracker.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
