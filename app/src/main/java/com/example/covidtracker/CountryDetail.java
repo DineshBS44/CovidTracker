@@ -17,9 +17,8 @@ public class CountryDetail extends AppCompatActivity {
 
     TextView tvDetailCountryName, tvDetailTotalCases, tvDetailTodayCases, tvDetailTotalDeaths,
             tvDetailTodayDeaths, tvDetailTotalRecovered, tvDetailTotalActive, tvDetailTotalCritical;
-    private SkeletonScreen skeletonScreen1,skeletonScreen2,skeletonScreen3,skeletonScreen4;
-    private LinearLayout linearLayoutCountryDetail;
-    private LinearLayout linearLayout1,linearLayout2,linearLayout3,linearLayout4;
+    private SkeletonScreen skeletonScreen1, skeletonScreen2, skeletonScreen3, skeletonScreen4;
+    private LinearLayout linearLayout1, linearLayout2, linearLayout3, linearLayout4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +36,10 @@ public class CountryDetail extends AppCompatActivity {
         tvDetailTotalActive = findViewById(R.id.detail_total_active);
         tvDetailTotalCritical = findViewById(R.id.detail_total_critical);
 
-        linearLayoutCountryDetail=findViewById(R.id.country_detail_linear_layout);
-        linearLayout1=findViewById(R.id.linear_layout_1);
-        linearLayout2=findViewById(R.id.linear_layout_2);
-        linearLayout3=findViewById(R.id.linear_layout_3);
-        linearLayout4=findViewById(R.id.linear_layout_4);
+        linearLayout1 = findViewById(R.id.linear_layout_1);
+        linearLayout2 = findViewById(R.id.linear_layout_2);
+        linearLayout3 = findViewById(R.id.linear_layout_3);
+        linearLayout4 = findViewById(R.id.linear_layout_4);
 
         // call Country model class
         final Country covidCountry = getIntent().getParcelableExtra("EXTRA_COVID");

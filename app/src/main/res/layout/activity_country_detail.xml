@@ -12,35 +12,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="150dp"
         android:fontFamily="@font/cerebri_sans_bold"
         android:gravity="center"
         android:text="China"
         android:textColor="@android:color/white"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="150dp"
-        android:textSize="40sp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/country_detail_linear_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
-        android:id="@+id/country_detail_linear_layout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
 
-
         <LinearLayout
+            android:id="@+id/linear_layout_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            android:id="@+id/linear_layout_1"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -103,10 +102,10 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linear_layout_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/linear_layout_2"
             android:layout_marginTop="15dp"
             android:orientation="horizontal">
 
@@ -170,40 +169,39 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linear_layout_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/linear_layout_3"
-            >
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/detail_tv_total_recovered"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/cerebri_sans_regular"
-            android:text="Total Recovered"
-            android:textColor="@android:color/white"
-            android:textSize="15sp" />
+            <TextView
+                android:id="@+id/detail_tv_total_recovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/cerebri_sans_regular"
+                android:text="Total Recovered"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/detail_total_recovered"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/cerebri_sans_bold"
-            android:text="80611"
-            android:textColor="@color/colorAccent"
-            android:textSize="30dp" />
+            <TextView
+                android:id="@+id/detail_total_recovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/cerebri_sans_bold"
+                android:text="80611"
+                android:textColor="@color/colorAccent"
+                android:textSize="30dp" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linear_layout_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/linear_layout_4"
             android:layout_marginTop="15dp"
             android:orientation="horizontal">
 
