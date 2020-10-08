@@ -1,4 +1,4 @@
-package com.example.covidtracker;
+package com.example.covidtracker.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,6 +27,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.covidtracker.activities.CountryDetail;
+import com.example.covidtracker.adapter.ItemClickSupport;
+import com.example.covidtracker.R;
 import com.example.covidtracker.adapter.CountryAdapter;
 import com.example.covidtracker.model.Country;
 

@@ -1,9 +1,11 @@
-package com.example.covidtracker;
+package com.example.covidtracker.adapter;
 
 import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.covidtracker.R;
 
 public class ItemClickSupport {
     private final RecyclerView mRecyclerView;

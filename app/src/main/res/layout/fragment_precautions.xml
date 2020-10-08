@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorPrimaryDark"
-        tools:context=".PrecautionsFragment">
+        tools:context=".fragments.PrecautionsFragment">
 
         <TextView
             android:id="@+id/prevention_is_better_than_cure"

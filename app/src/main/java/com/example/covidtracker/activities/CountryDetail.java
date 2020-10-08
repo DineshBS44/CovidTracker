@@ -1,4 +1,4 @@
-package com.example.covidtracker;
+package com.example.covidtracker.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.ViewCompat;
@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.ethanhua.skeleton.Skeleton;
 import com.ethanhua.skeleton.SkeletonScreen;
+import com.example.covidtracker.R;
 import com.example.covidtracker.adapter.PrecautionsAdapter;
 import com.example.covidtracker.model.Country;
 

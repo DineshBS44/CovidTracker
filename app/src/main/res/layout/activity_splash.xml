@@ -8,30 +8,29 @@
     tools:context=".activities.SplashActivity">
 
     <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splash_lottie_anim"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:id="@+id/splash_lottie_anim"
-        app:lottie_fileName="covid_anim.json"
         android:layout_marginTop="150dp"
         android:scaleType="centerCrop"
-        app:lottie_loop="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
-        />
+        app:lottie_fileName="covid_anim.json"
+        app:lottie_loop="false" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="COVID Tracker"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/splash_lottie_anim"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="100dp"
-        android:textColor="@android:color/white"
         android:fontFamily="@font/cerebri_sans_bold"
         android:gravity="center"
+        android:text="COVID Tracker"
+        android:textColor="@android:color/white"
         android:textSize="35sp"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splash_lottie_anim" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

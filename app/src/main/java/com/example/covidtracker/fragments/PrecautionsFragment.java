@@ -1,4 +1,4 @@
-package com.example.covidtracker;
+package com.example.covidtracker.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import com.ethanhua.skeleton.Skeleton;
 import com.ethanhua.skeleton.SkeletonAdapter;
 import com.ethanhua.skeleton.SkeletonScreen;
+import com.example.covidtracker.R;
 import com.example.covidtracker.adapter.PrecautionsAdapter;
 import com.example.covidtracker.model.Precautions;
 

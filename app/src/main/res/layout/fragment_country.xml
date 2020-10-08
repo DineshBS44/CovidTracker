@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
     android:fitsSystemWindows="true"
-    tools:context=".CountryFragment">
+    tools:context=".fragments.CountryFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/country_rv"
