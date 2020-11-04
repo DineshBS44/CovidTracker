@@ -4,9 +4,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -34,13 +36,20 @@ public class PrecautionsAdapter extends RecyclerView.Adapter<PrecautionsAdapter.
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        Glide.with(holder.precautionsImage)
-                .asBitmap()
-                .load(precautions.get(position).getImgResource())
-                .into(holder.precautionsImage);
+        if(precautions.get(position).getTitle().equals("Stay"))
+        {
+            holder.rootView.setLayoutParams(holder.params);
+        }
+        else
+        {
+            Glide.with(holder.precautionsImage)
+                    .asBitmap()
+                    .load(precautions.get(position).getImgResource())
+                    .into(holder.precautionsImage);
 
-        holder.precautionsHeader.setText(precautions.get(position).getTitle());
-        holder.precautionsBody.setText(precautions.get(position).getPrecautionsBody());
+            holder.precautionsHeader.setText(precautions.get(position).getTitle());
+            holder.precautionsBody.setText(precautions.get(position).getPrecautionsBody());
+        }
 
     }
 
@@ -50,8 +59,15 @@ public class PrecautionsAdapter extends RecyclerView.Adapter<PrecautionsAdapter.
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
+
+        public ConstraintLayout.LayoutParams params;
+        public ConstraintLayout rootView;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
+            params = new ConstraintLayout.LayoutParams(0, 0);
+            rootView=itemView.findViewById(R.id.rootView);
         }
 
         TextView precautionsHeader=itemView.findViewById(R.id.precautions_header);
