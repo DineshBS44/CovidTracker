@@ -77,7 +77,7 @@ public class PrecautionsFragment extends Fragment {
                 .adapter(skeletonAdapter)
                 .shimmer(true)
                 .angle(20)
-                .duration(1200)
+                .duration(800)
                 .load(R.layout.skeleton_item_precautions)
                 .count(10)
                 .show();

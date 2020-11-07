@@ -49,25 +49,25 @@ public class CountryDetail extends AppCompatActivity {
         skeletonScreen1 = Skeleton.bind(linearLayout1)
                 .shimmer(true)
                 .angle(20)
-                .duration(1200)
+                .duration(800)
                 .load(R.layout.skeleton_list_item_1)
                 .show();
         skeletonScreen2 = Skeleton.bind(linearLayout2)
                 .shimmer(true)
                 .angle(20)
-                .duration(1200)
+                .duration(800)
                 .load(R.layout.skeleton_list_item_1)
                 .show();
         skeletonScreen3 = Skeleton.bind(linearLayout3)
                 .shimmer(true)
                 .angle(20)
-                .duration(1200)
+                .duration(800)
                 .load(R.layout.skeleton_list_item_2)
                 .show();
         skeletonScreen4 = Skeleton.bind(linearLayout4)
                 .shimmer(true)
                 .angle(20)
-                .duration(1200)
+                .duration(800)
                 .load(R.layout.skeleton_list_item_1)
                 .show();
 
@@ -95,7 +95,7 @@ public class CountryDetail extends AppCompatActivity {
             }
         };
 
-        mHandler.postDelayed(mRunnable, 1300);
+        mHandler.postDelayed(mRunnable, 1000);
 
     }
 }

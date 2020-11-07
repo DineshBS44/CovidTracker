@@ -23,7 +23,7 @@
             android:gravity="center"
             android:text="Prevention Is Better Than Cure"
             android:textColor="@android:color/white"
-            android:textSize="27sp"
+            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
