@@ -27,7 +27,6 @@ public class CountryDetail extends AppCompatActivity {
         setContentView(R.layout.activity_country_detail);
 
         getSupportActionBar().setTitle("COVID 19");
-        // call view
         tvDetailCountryName = findViewById(R.id.detail_country_name);
         tvDetailTotalCases = findViewById(R.id.detail_total_cases);
         tvDetailTodayCases = findViewById(R.id.detail_today_cases);
@@ -42,32 +41,31 @@ public class CountryDetail extends AppCompatActivity {
         linearLayout3 = findViewById(R.id.linear_layout_3);
         linearLayout4 = findViewById(R.id.linear_layout_4);
 
-        // call Country model class
         final Country covidCountry = getIntent().getParcelableExtra("EXTRA_COVID");
         tvDetailCountryName.setText(covidCountry.getmCovidCountry());
 
         skeletonScreen1 = Skeleton.bind(linearLayout1)
                 .shimmer(true)
                 .angle(20)
-                .duration(800)
+                .duration(1200)
                 .load(R.layout.skeleton_list_item_1)
                 .show();
         skeletonScreen2 = Skeleton.bind(linearLayout2)
                 .shimmer(true)
                 .angle(20)
-                .duration(800)
+                .duration(1200)
                 .load(R.layout.skeleton_list_item_1)
                 .show();
         skeletonScreen3 = Skeleton.bind(linearLayout3)
                 .shimmer(true)
                 .angle(20)
-                .duration(800)
+                .duration(1200)
                 .load(R.layout.skeleton_list_item_2)
                 .show();
         skeletonScreen4 = Skeleton.bind(linearLayout4)
                 .shimmer(true)
                 .angle(20)
-                .duration(800)
+                .duration(1200)
                 .load(R.layout.skeleton_list_item_1)
                 .show();
 
@@ -95,7 +93,7 @@ public class CountryDetail extends AppCompatActivity {
             }
         };
 
-        mHandler.postDelayed(mRunnable, 1000);
+        mHandler.postDelayed(mRunnable, 1300);
 
     }
 }

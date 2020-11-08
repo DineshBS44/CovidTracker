@@ -55,18 +55,14 @@ public class CountryFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_country, container, false);
 
-        // set has option menu as true because we have menu
         setHasOptionsMenu(true);
 
-        // call views
         rvCovidCountry = root.findViewById(R.id.country_rv);
         progressBar = root.findViewById(R.id.progress_circular_country);
         rvCovidCountry.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        //call list
         covidCountries = new ArrayList<>();
 
-        // call Volley method
         getDataFromServerSortTotalCases();
 
         return root;
@@ -169,7 +165,6 @@ public class CountryFragment extends Fragment {
                         for (int i = 0; i < jsonArray.length(); i++) {
                             JSONObject data = jsonArray.getJSONObject(i);
 
-                            // Extract JSONObject inside JSONObject
                             JSONObject countryInfo = data.getJSONObject("countryInfo");
 
                             covidCountries.add(new Country(

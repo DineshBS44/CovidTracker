@@ -38,25 +38,22 @@ public class HomeFragment extends Fragment {
 
         getActivity().setTitle("Overview");
 
-        // call view
         tvTotalConfirmed = root.findViewById(R.id.total_confirmed);
         tvTotalDeaths = root.findViewById(R.id.total_deaths);
         tvTotalRecovered = root.findViewById(R.id.total_recovered);
         tvLastUpdated = root.findViewById(R.id.last_updated);
         progressBar = root.findViewById(R.id.progress_circular);
 
-        // call Volley
         getData();
 
         return root;
     }
 
-    private String getDate(long milliSecond){
+    private String getDate(long milliSecond) {
 
-        // Mon, 23 Mar 2020 02:01:04 PM
         SimpleDateFormat formatter = new SimpleDateFormat("EEE, dd MMM yyyy hh:mm:ss aaa");
 
-        Calendar calendar= Calendar.getInstance();
+        Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(milliSecond);
         return formatter.format(calendar.getTime());
     }
@@ -78,7 +75,7 @@ public class HomeFragment extends Fragment {
                     tvTotalConfirmed.setText(jsonObject.getString("cases"));
                     tvTotalDeaths.setText(jsonObject.getString("deaths"));
                     tvTotalRecovered.setText(jsonObject.getString("recovered"));
-                    tvLastUpdated.setText("Last Updated"+"\n"+getDate(jsonObject.getLong("updated")));
+                    tvLastUpdated.setText("Last Updated" + "\n" + getDate(jsonObject.getLong("updated")));
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }

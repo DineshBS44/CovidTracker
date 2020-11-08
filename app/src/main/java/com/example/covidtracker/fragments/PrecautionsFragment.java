@@ -1,6 +1,5 @@
 package com.example.covidtracker.fragments;
 
-import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -30,13 +29,10 @@ public class PrecautionsFragment extends Fragment {
 
     RecyclerView precautionsRecyclerView;
     ArrayList<Precautions> precautions = new ArrayList<>();
-    private RecyclerView.SmoothScroller smoothScroller;
-    private static final float MILLISECONDS_PER_INCH = 40f;
     private SkeletonScreen skeletonScreen;
-    private Context context;
 
     public PrecautionsFragment() {
-        // Required empty public constructor
+
     }
 
 
@@ -48,7 +44,6 @@ public class PrecautionsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         getActivity().setTitle("Precaution");
         return inflater.inflate(R.layout.fragment_precautions, container, false);
     }
@@ -77,7 +72,7 @@ public class PrecautionsFragment extends Fragment {
                 .adapter(skeletonAdapter)
                 .shimmer(true)
                 .angle(20)
-                .duration(800)
+                .duration(1200)
                 .load(R.layout.skeleton_item_precautions)
                 .count(10)
                 .show();

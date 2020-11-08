@@ -4,7 +4,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -36,12 +35,9 @@ public class PrecautionsAdapter extends RecyclerView.Adapter<PrecautionsAdapter.
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        if(precautions.get(position).getTitle().equals("Stay"))
-        {
+        if (precautions.get(position).getTitle().equals("Stay")) {
             holder.rootView.setLayoutParams(holder.params);
-        }
-        else
-        {
+        } else {
             Glide.with(holder.precautionsImage)
                     .asBitmap()
                     .load(precautions.get(position).getImgResource())
@@ -58,7 +54,7 @@ public class PrecautionsAdapter extends RecyclerView.Adapter<PrecautionsAdapter.
         return precautions.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
         public ConstraintLayout.LayoutParams params;
         public ConstraintLayout rootView;
@@ -67,12 +63,12 @@ public class PrecautionsAdapter extends RecyclerView.Adapter<PrecautionsAdapter.
             super(itemView);
 
             params = new ConstraintLayout.LayoutParams(0, 0);
-            rootView=itemView.findViewById(R.id.rootView);
+            rootView = itemView.findViewById(R.id.rootView);
         }
 
-        TextView precautionsHeader=itemView.findViewById(R.id.precautions_header);
-        TextView precautionsBody=itemView.findViewById(R.id.precautions_body);
-        ImageView precautionsImage=itemView.findViewById(R.id.precautions_image);
+        TextView precautionsHeader = itemView.findViewById(R.id.precautions_header);
+        TextView precautionsBody = itemView.findViewById(R.id.precautions_body);
+        ImageView precautionsImage = itemView.findViewById(R.id.precautions_image);
 
     }
 
